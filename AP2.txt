@@ -1,0 +1,122 @@
+Use Case 1: Record
+
+  -  Description: This use case allows the user to record a message.
+
+  -  Primary Actor: User
+
+  -  Secondary Actor: Recorder
+
+  -  Preconditions:
+
+       -  The digital sound recorder is turned on.
+       -  The user has pressed the "Record" button.
+
+  -  Postconditions:
+
+       -  The message has been recorded and stored in a chosen slot.
+       -  The original message in the chosen slot has been destroyed.
+
+  -  Main Flow of Events:
+
+       -  The user presses the "Record" button.
+       -  The digital sound recorder checks the battery level to ensure it is sufficient for recording.
+       -  The digital sound recorder starts recording.
+       -  The digital sound recorder stops recording after 2 minutes or when the user presses the "Stop" button.
+       -  The digital sound recorder saves the recorded message to the chosen slot and destroys the original message in that slot.
+
+  -  Alternate Flow 1: Insufficient Battery
+
+       -  If the battery level is not sufficient for recording, the digital sound recorder displays a warning message and does not start recording.
+
+
+Use Case 2: Play
+
+  -  Description: This use case allows the user to replay a message.
+
+  -  Primary Actor: User
+
+  -  Secondary Actor: Recorder
+
+  -  Preconditions:
+
+       -  The digital sound recorder is turned on.
+       -  The user has selected a message to replay.
+
+  -  Postconditions:
+
+       -  The selected message has been replayed.
+
+  -  Main Flow of Events:
+
+       -  The user selects a message to replay.
+       -  The digital sound recorder checks the battery level to ensure it is sufficient for replaying.
+       -  The digital sound recorder plays the selected message.
+
+  -  Alternate Flow 1: Insufficient Battery
+
+       -  If the battery level is not sufficient for replaying, the digital sound recorder displays a warning message and does not play the message.
+
+
+Use Case 3: Delete
+
+  -  Description: This use case allows the user to delete a message.
+
+  -  Primary Actor: User
+
+  -  Secondary Actor: Recorder
+
+  -  Preconditions:
+
+       -  The digital sound recorder is turned on.
+       -  The user has selected a message to delete.
+
+  -  Postconditions:
+
+       -  The selected message has been deleted.
+
+  -  Main Flow of Events:
+
+       -  The user selects a message to delete.
+       -  The digital sound recorder deletes the selected message.
+
+
+Use Case 4: Lock
+
+  -  Description: This use case allows the user to lock a message to prevent it from being deleted or overwritten.
+
+  -  Primary Actor: User
+
+  -  Preconditions:
+
+       -  The digital sound recorder is turned on.
+       -  The user has selected a message to lock.
+
+  -  Postconditions:
+
+       -  The selected message has been locked and cannot be deleted or overwritten by recording to the same slot.
+
+  -  Main Flow of Events:
+
+       -  The user selects a message to lock.
+       -  The digital sound recorder locks the selected message.
+
+
+Use Case 5: Unlock
+
+  -  Description: This use case allows the user to unlock a previously locked message.
+
+  -  Primary Actor: User
+
+  -  Preconditions:
+
+       -  The digital sound recorder is turned on.
+       -  The user has selected a message to unlock.
+
+  -  Postconditions:
+
+       -  The selected message has been unlocked and can be deleted or overwritten by recording to the same slot.
+
+  -  Main Flow of Events:
+
+       -  The user selects a message to unlock.
+       -  The digital sound recorder unlocks the selected message.
